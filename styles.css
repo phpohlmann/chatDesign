@@ -12,11 +12,203 @@ html {
     background-color: #16131C;
 }
 
+a {
+    text-decoration: none;
+}
+
+.headerListaChats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    margin-bottom: 36px;
+}
+
+.addIcon {
+    background-color: #6D1ED1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    margin-top: 18px;
+    margin-bottom: 30px;
+}
+
+.grupoCard{
+    height: 60px;
+    width: clamp(300px, 70vw, 800px);
+    display: flex;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-bottom: 24px;
+}
+
+.grupoCard h1 {
+    font-size: 24px;
+    padding-left: 9px;
+    font-family: 'Bakbak One';
+    font-weight: 100;
+}
+
+.grupoCard p {
+    font-size: 12px;
+    padding-left: 9px;
+    font-family: 'Baloo Bhai 2';
+}
+
+.abaCard{
+    background-color: #6D1ED1;
+    width: 3%;
+    height: 60px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.bodyListaChats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerLista {
+    background-color: #6D1ED1;
+    color: #fff;
+    display: none;
+    align-items: center;
+    border-radius: 15px;
+    width: 300px;
+    height: 45px;
+    justify-content: center;
+    margin-top: 18px;
+    margin-bottom: 30px;
+}
+
+.footerLista img {
+    display: none;
+}
+
+.cardTexts {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardTexts h1{
+    padding-top: 3px;
+}
+
+.cardTexts p{
+    padding-bottom: 3px;
+}
+
+.divImagem {
+    width: 17%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+
+.divImagem img {
+    width: 24px;
+    height: 24px;
+}
+
+.bodyLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
 
+.login-form {
+    width: clamp(200px, 80%, 500px);
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.login-form hr {
+    border: 0;
+    margin-bottom: 18px;
+    height: 2px;
+    background: #fff;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    
+}
+
+.input-field img {
+    width: 7.5%;
+    margin-right: 10px;
+}
+
+.input-field input {
+    background: none;
+    border: none;
+    color: #fff;
+    flex: 1;
+    outline: none;
+}
+
+.login-button {
+    background-color: #6D1ED1;
+    color: #fff;
+    font-family: babakone, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    margin-top: 45px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 32px;
+}
+
+.footerLogin{
+    width: 100%;
+}
+
+.footerLogin img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+header h1{
+    position: absolute;
+    top: 7.5%;
+    font-size: 64px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: babakone, sans-serif;
+    text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
+}
 
 @media (max-width: 992px) {
-    body {
+    .bodyLogin {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -24,7 +216,8 @@ html {
         height: 100vh;
         margin: 0;
     }
-    
+
+
     .login-form {
         width: clamp(200px, 80%, 500px);
         height: 25%;
@@ -36,6 +229,7 @@ html {
     
     .login-form hr {
         border: 0;
+        margin-bottom: 18px;
         height: 2px;
         background: #fff;
     }
@@ -67,45 +261,21 @@ html {
         font-weight: bold;
         padding: 10px;
         border: none;
+        margin-top: 45px;
         border-radius: 4px;
         cursor: pointer;
         width: 100%;
         font-size: 32px;
     }
     
-    footer{
+    .footerLogin{
         width: 100%;
     }
 
-    footer img {
+    .footerLogin img {
         width: 100%;
         position: absolute;
         bottom: 0;
-    }
-
-    .footerLista {
-        background-color: #6D1ED1;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        border-radius: 15px;
-        width: 75%;
-        height: 60px;
-        justify-content: center;
-        position: fixed;
-        bottom: 5%;
-    }
-
-    .footerLista a{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .footerLista a img {
-        width: 30px;
-        margin-bottom: 15px;
     }
 
     header h1{
@@ -125,4 +295,207 @@ html {
         text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
     }
 
+    .addIcon{
+        display: none;
+    }
+
+    /* Lista Chats */
+    .grupoCard{
+        height: 60px;
+        width: clamp(300px, 70vw, 800px);
+        display: flex;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        margin-bottom: 24px;
+    }
+
+    .grupoCard h1 {
+        font-size: 24px;
+        padding-left: 9px;
+    }
+
+    .grupoCard p {
+        font-size: 12px;
+        padding-left: 9px;
+        font-family: 'Baloo Bhai 2';
+    }
+
+    .abaCard{
+        background-color: #6D1ED1;
+        width: 3%;
+        height: 60px;
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .bodyListaChats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footerLista {
+        background-color: #6D1ED1;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        width: 300px;
+        height: 45px;
+        justify-content: center;
+        margin-top: 18px;
+        margin-bottom: 30px;
+    }
+
+    .cardTexts {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .cardTexts h1{
+        padding-top: 3px;
+    }
+
+    .cardTexts p{
+        padding-bottom: 3px;
+    }
+
+    .divImagem {
+        width: 17%;
+        height: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: end;
+    }
+
+    .divImagem img {
+        width: 24px;
+        height: 24px;
+    }
+
+
 }
+
+    /* chat */
+
+    .bodyChat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Baloo Bhai 2';
+    }
+
+    .mainChat {
+        margin-top: 36px;
+        width: 90vw;
+    }
+
+    .headerChat {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90vw;
+        margin-top: 30px;
+    }
+
+    .voltarBotao{
+        background-color: #6D1ED1;
+        padding: 6px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nomeGrupo{
+        font-family: babakone, sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .metaInfoMsg {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nome{
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .diaHora{
+        font-size: 12px;
+    }
+
+    .textMsg{
+        font-size: 14px;
+        padding: 9px;
+    }
+
+    .mensagemOutro {
+        width: 70%;
+        margin-bottom: 18px;
+    }
+
+    .mensagemOutro .textMsg {
+        background-color: #201E25;
+        border-radius: 5px;
+    }
+
+    .mensagemMinha {
+        margin-left: 30%;
+        width: 70%;
+        margin-bottom: 18px;
+    }
+
+    .mensagemMinha .textMsg{
+        background-color: #6D1ED1;
+        border-radius: 5px;
+        padding: 9px;
+    }
+
+    .footerChat {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90vw;
+        margin-top: 30px;
+        margin-bottom: 36px;
+    }
+
+    .enviarMensagemDiv{
+        width: 100%;
+    }
+
+    .enviarMensagemDiv input{
+        background-color: #282135;
+        border: 0;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        padding-left: 9px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.5);
+        height: 45px;
+        width: 100%;
+    }
+
+    .footerChat button {
+        background-color: #6D1ED1;
+        border: 0;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding: 9px;
+    }
+
+    .footerChat button img {
+        width: 24px;
+        height: 24px;
+    }
